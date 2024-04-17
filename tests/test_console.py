@@ -140,7 +140,7 @@ class TestHBNBCommand(unittest.TestCase):
             clear_stream(cout)
             cons.onecmd('count State')
             cnt = cout.getvalue().strip()
-            self.assertEqual(int(cnt), prev_count + 1)
+            self.assertEqual(int(cnt), prev_count +1)
             clear_stream(cout)
             cons.onecmd('count State')
             cursor.close()
